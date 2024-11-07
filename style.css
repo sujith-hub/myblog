@@ -664,3 +664,44 @@ textarea.contact-form-text {
     align-items: center;
     justify-content: space-around;
 }
+.counter{
+    display: inline-block;
+}
+/* Center child elements */
+.website-counter {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+}
+
+/* Styles for website counter container */
+.website-counter {
+  background-color: #000;
+  height: 20px;
+  width: 50px;
+  color: white;
+    display: inline-block;
+    align-items: center;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* Styles for reset button */
+#reset {
+  margin-top: 20px;
+  background-color: #000;
+  cursor: pointer;
+  font-size: 18px;
+    display: inline-block;
+    align-items: center;
+  padding: 8px 20px;
+  color: white;
+  border: 0;
+}
