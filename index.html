@@ -681,11 +681,20 @@ textarea.contact-form-text {
 }
 
 /* Center child elements */
+body,
 .website-counter {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+body {
+  height: 100vh;
+}
+
+/* Styles for website counter container */
+.website-counter {
   background-color: #ff4957;
   height: 50px;
   width: 80px;
@@ -695,18 +704,6 @@ textarea.contact-form-text {
   font-size: 25px;
   margin-top: 10px;
 }
-
-/* Styles for website counter container 
-.website-counter {
-  background-color: #ff4957;
-  height: 50px;
-  width: 80px;
-  color: white;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 25px;
-  margin-top: 10px;
-} */
 
 /* Styles for reset button */
 #reset {
@@ -830,20 +827,7 @@ textarea.contact-form-text {
                 MenuItems.style.maxHeight = "0px";
             }
         }
-    </script>
-    <script>
-        document.getElementById('Click').addEventListener('click',
-        function clicked()
-        {
-            document.querySelector('.bgmodel').style.display='flex';
-        });
-        
-        document.querySelector('.close').addEventListener('click',
-        function(){
-            document.querySelector('.bgmodel').style.display='none';
-        });
-        
-        var counterContainer = document.querySelector(".website-counter");
+         var counterContainer = document.querySelector(".website-counter");
         var resetButton = document.querySelector("#reset");
         var visitCount = localStorage.getItem("page_view");
 
@@ -863,7 +847,6 @@ textarea.contact-form-text {
             localStorage.setItem("page_view", 1);
             counterContainer.innerHTML = visitCount;
         });
-
     </script>
 
 </body>
